@@ -15,7 +15,7 @@ class CleanAssets_Controller extends Controller {
 				$haystack2 = DataObject::get('Product', "ImageID = ".$file->ID);
 				if($haystack2) {
 					if($haystack) {
-						$haystack->merge($hatstack2);
+						$haystack->merge($haystack2);
 					} else {
 						$haystack = $haystack2;
 					}
